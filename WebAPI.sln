@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{F3521730-CD7E-43B0-929B-A646E5895EDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomDateLib", "RandomDateLib\RandomDateLib.csproj", "{2256C910-4E71-445B-8A1C-EB9577970BCC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3521730-CD7E-43B0-929B-A646E5895EDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3521730-CD7E-43B0-929B-A646E5895EDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3521730-CD7E-43B0-929B-A646E5895EDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3521730-CD7E-43B0-929B-A646E5895EDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2256C910-4E71-445B-8A1C-EB9577970BCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2256C910-4E71-445B-8A1C-EB9577970BCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2256C910-4E71-445B-8A1C-EB9577970BCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2256C910-4E71-445B-8A1C-EB9577970BCC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
