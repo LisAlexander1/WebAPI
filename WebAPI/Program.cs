@@ -35,6 +35,10 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateIssuerSigningKey = true,
         };
     });
+builder.Services.AddLogging(logging =>
+{
+    logging.AddConsole();
+});
 
 builder.Services.AddScoped<ProductsRepository>();
 builder.Services.AddScoped<SalesRepository>();

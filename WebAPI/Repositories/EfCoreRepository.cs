@@ -13,7 +13,7 @@ public abstract class EfCoreRepository<TEntity, TContext> : IRepository<TEntity>
     {
         this.context = context;
     }
-    public virtual async Task<TEntity> Add(TEntity entity)
+    public virtual async Task<TEntity?> Add(TEntity entity)
     {
         context.Set<TEntity>().Add(entity);
         await context.SaveChangesAsync();
@@ -22,7 +22,7 @@ public abstract class EfCoreRepository<TEntity, TContext> : IRepository<TEntity>
 
     public virtual async Task<TEntity> Delete(Guid id)
     {
-        var entity = await context.Set<TEntity>().FindAsync(id);
+        var entity = await Get(id);
         if (entity == null)
         {
             return entity;
@@ -34,7 +34,7 @@ public abstract class EfCoreRepository<TEntity, TContext> : IRepository<TEntity>
         return entity;
     }
 
-    public virtual async Task<TEntity> Get(Guid id)
+    public virtual async Task<TEntity?> Get(Guid id)
     {
         return await context.Set<TEntity>().FirstOrDefaultAsync(p => p.Id == id);
     }

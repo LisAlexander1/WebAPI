@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using System.Globalization;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebAPI.Models;
@@ -7,7 +9,7 @@ using WebAPI.Repositories;
 namespace WebAPI.Controllers;
 
 [ApiController]
-[Route("/sales")]
+[Microsoft.AspNetCore.Mvc.Route("/sales")]
 public class SalesController : Controller
 {
     private SalesRepository SalesRepository { get; }
@@ -18,16 +20,16 @@ public class SalesController : Controller
 
     }
     
-    [HttpGet]
+    [HttpGet(Name = "GetAll")]
     [Authorize]
-    public async Task<IActionResult> FindAll()
+    public async Task<IActionResult> GetAll()
     {
         return Ok(await SalesRepository.GetAll());
     }
     
-    [HttpGet("{id:guid}")]
+    [HttpGet("{id:guid}", Name = "Get")]
     [Authorize]
-    public async Task<IActionResult> FindOne(Guid id)
+    public async Task<IActionResult> Get(Guid id)
     {
         var sale = await SalesRepository.Get(id);
         if (sale == null)
@@ -57,8 +59,12 @@ public class SalesController : Controller
         {
             return BadRequest();
         }
-        await SalesRepository.Add(sale);
-        return CreatedAtAction("FindOne", new {id = sale.Id}, sale);
+        var createdSale = await SalesRepository.Add(sale);
+        if (createdSale == null)
+        {
+            return BadRequest();
+        }
+        return CreatedAtAction("Get", new {id = createdSale.Id}, createdSale);
     }
 
     [HttpPut]
@@ -72,5 +78,19 @@ public class SalesController : Controller
 
         var updatedSale = await SalesRepository.Update(sale);
         return Ok(updatedSale);
+    }
+    
+    [HttpGet("bydate/{date:datetime}",Name = "GetByDate")]
+    [Authorize]
+    public async Task<IActionResult> GetByDate(DateTime date)
+    {
+        // var dateTime = DateTime.ParseExact(date, "yyyy-MM-dd", null);
+        var sales = await SalesRepository.GetByDate(date);
+        if (sales.Count == 0)
+        {
+            return NotFound();
+        }
+        
+        return Ok( new { Sales = sales, Sum = sales.Select(s => s.Sum).Sum()});
     }
 }

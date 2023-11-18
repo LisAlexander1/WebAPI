@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using WebAPI.Dto;
 using WebAPI.Models;
 using WebAPI.Repositories;
 
@@ -21,14 +20,14 @@ public class ProductController : Controller
     
     [HttpGet]
     [Authorize]
-    public async Task<IActionResult> FindAll()
+    public async Task<IActionResult> GetAll()
     {
         return Ok(await ProductsRepository.GetAll());
     }
     
     [HttpGet("{id:guid}")]
     [Authorize]
-    public async Task<IActionResult> FindOne(Guid id)
+    public async Task<IActionResult> Get(Guid id)
     {
         var product = await ProductsRepository.Get(id);
         if (product == null)
@@ -59,7 +58,7 @@ public class ProductController : Controller
             return BadRequest();
         }
         await ProductsRepository.Add(product);
-        return CreatedAtAction("FindOne", new {id = product.Id}, product);
+        return CreatedAtAction("Get", new { id = product.Id }, product);
     }
 
     [HttpPut]

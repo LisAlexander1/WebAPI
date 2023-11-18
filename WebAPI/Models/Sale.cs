@@ -1,6 +1,7 @@
 ﻿
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore.Query;
 
 namespace WebAPI.Models;
 
@@ -20,4 +21,8 @@ public class Sale : IEntity
     
     [Required]
     public int SellsCount { get; set; }
+    
+    [NotMapped]
+    
+    public double Sum => SellsCount * Product?.Price ?? 0;
 }
