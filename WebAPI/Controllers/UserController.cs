@@ -44,11 +44,4 @@ public class UserController : Controller
 
         return Ok(new { access_token = new JwtSecurityTokenHandler().WriteToken(jwt) });
     }
-
-    [HttpGet]
-    public async Task<IActionResult> GetAll()
-    {
-        return Ok(await UserRepository.GetAll());
-    }
-
 }
