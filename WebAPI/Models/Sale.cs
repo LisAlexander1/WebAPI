@@ -1,6 +1,7 @@
 ﻿
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore.Query;
 
 namespace WebAPI.Models;
@@ -15,6 +16,7 @@ public class Sale : IEntity
     
     [Required]
     [ForeignKey("Product")]
+    [JsonIgnore]
     public Guid ProductId { get; set; }
     
     public Product Product { get; set; }
@@ -23,6 +25,5 @@ public class Sale : IEntity
     public int SellsCount { get; set; }
     
     [NotMapped]
-    
     public double Sum => SellsCount * Product?.Price ?? 0;
 }
