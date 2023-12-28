@@ -27,7 +27,7 @@ public partial class CreateSaleViewModel : ObservableValidator, INavigationAware
     }
 
     [ObservableProperty]
-    private ObservableCollection<Product> _products = new();
+    private List<Product> _products = new();
 
     [ObservableProperty]
     private bool _loading;
@@ -83,7 +83,12 @@ public partial class CreateSaleViewModel : ObservableValidator, INavigationAware
                     }); 
                 }
 
-                Products = new ObservableCollection<Product>(Products.Union(task.Result));
+                // var productIndex = task.Result.IndexOf(SelectedProduct);
+                // if (productIndex >= 0)
+                // {
+                //     SelectedProduct = task.Result[productIndex];
+                // }
+                Products = task.Result;
             }
 
             if (task.IsFaulted)
