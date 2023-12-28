@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RandomDateLib")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f5d7f5bc3f1f7512ddbe1294696e32514832afd3")]
 [assembly: System.Reflection.AssemblyProductAttribute("RandomDateLib")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RandomDateLib")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

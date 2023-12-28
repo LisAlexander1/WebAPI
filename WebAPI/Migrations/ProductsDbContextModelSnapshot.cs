@@ -42,43 +42,43 @@ namespace WebAPI.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("23a1a0c6-420f-43f0-b825-291c1f1cc2c4"),
+                            Id = new Guid("43cab4a1-2023-462b-bbb6-1548723f4a9b"),
                             Name = "Яблоко",
                             Price = 10.0
                         },
                         new
                         {
-                            Id = new Guid("9a779d9c-2ba1-4c3a-99a2-a07a56bec562"),
+                            Id = new Guid("83051721-c684-4d33-b27b-be88891d0305"),
                             Name = "Груша",
                             Price = 5040.0
                         },
                         new
                         {
-                            Id = new Guid("59f4b265-7847-4a0e-a241-a56b2d096507"),
+                            Id = new Guid("31f8b402-4f29-4234-a5d3-2e843e1adeed"),
                             Name = "Пистолет",
                             Price = 7214.0
                         },
                         new
                         {
-                            Id = new Guid("da013aea-0169-4b1c-bf75-7cbfec2953d5"),
+                            Id = new Guid("6cccc01a-eb96-4465-a476-30f7276d6f7f"),
                             Name = "Лопасть вертолета Apache",
                             Price = 8431.0
                         },
                         new
                         {
-                            Id = new Guid("fdf86d11-4349-4916-ae70-c893da24ec8a"),
+                            Id = new Guid("310ac857-1365-4657-8b5e-cb2c620589dd"),
                             Name = "Первая ступень ракетоносителя Союз-1Б",
                             Price = 3397.0
                         },
                         new
                         {
-                            Id = new Guid("9f9695ba-3cd9-4c88-9c94-00c8a98693c0"),
+                            Id = new Guid("02f35729-4fe4-4a15-a40c-294be3c7462c"),
                             Name = "Schützenpanzerwagen",
                             Price = 7543.0
                         },
                         new
                         {
-                            Id = new Guid("ccb544e5-b96c-45ae-b891-f70e31c978b4"),
+                            Id = new Guid("e2a5a28e-1bce-4d56-990e-136163dcb6df"),
                             Name = "Транзистор",
                             Price = 5899.0
                         });
@@ -108,108 +108,108 @@ namespace WebAPI.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("863f3873-bafe-453d-a15c-345688b870d0"),
-                            ProductId = new Guid("fdf86d11-4349-4916-ae70-c893da24ec8a"),
-                            SellDateTime = new DateTime(2021, 7, 22, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Id = new Guid("71396019-4900-444c-a3d4-dfdbf8a0cc73"),
+                            ProductId = new Guid("6cccc01a-eb96-4465-a476-30f7276d6f7f"),
+                            SellDateTime = new DateTime(2020, 12, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SellsCount = 70
+                        },
+                        new
+                        {
+                            Id = new Guid("05fa68e7-903f-456f-9d81-43964828fe5b"),
+                            ProductId = new Guid("310ac857-1365-4657-8b5e-cb2c620589dd"),
+                            SellDateTime = new DateTime(2011, 9, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SellsCount = 88
+                        },
+                        new
+                        {
+                            Id = new Guid("dacfaf55-3c16-43e9-b35f-1640c75b1a4c"),
+                            ProductId = new Guid("83051721-c684-4d33-b27b-be88891d0305"),
+                            SellDateTime = new DateTime(2016, 5, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SellsCount = 1
+                        },
+                        new
+                        {
+                            Id = new Guid("d287899c-7fe0-425b-855c-a57a858404e3"),
+                            ProductId = new Guid("83051721-c684-4d33-b27b-be88891d0305"),
+                            SellDateTime = new DateTime(2003, 1, 13, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SellsCount = 83
                         },
                         new
                         {
-                            Id = new Guid("569ed383-61e9-416f-a297-1ed7b3e16f91"),
-                            ProductId = new Guid("ccb544e5-b96c-45ae-b891-f70e31c978b4"),
-                            SellDateTime = new DateTime(2004, 1, 21, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            SellsCount = 77
-                        },
-                        new
-                        {
-                            Id = new Guid("f4a45fd1-752e-489f-b018-eaae3b83e4df"),
-                            ProductId = new Guid("9f9695ba-3cd9-4c88-9c94-00c8a98693c0"),
-                            SellDateTime = new DateTime(2014, 1, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            SellsCount = 97
-                        },
-                        new
-                        {
-                            Id = new Guid("6732a0fe-a519-4ba8-a43b-7646169dfd60"),
-                            ProductId = new Guid("59f4b265-7847-4a0e-a241-a56b2d096507"),
-                            SellDateTime = new DateTime(2018, 1, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            SellsCount = 48
-                        },
-                        new
-                        {
-                            Id = new Guid("cf6445c7-1ee5-49ec-8efe-2f5650a29561"),
-                            ProductId = new Guid("23a1a0c6-420f-43f0-b825-291c1f1cc2c4"),
-                            SellDateTime = new DateTime(2005, 3, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            SellsCount = 11
-                        },
-                        new
-                        {
-                            Id = new Guid("947f8009-4d39-4350-a269-0181887af3d1"),
-                            ProductId = new Guid("23a1a0c6-420f-43f0-b825-291c1f1cc2c4"),
-                            SellDateTime = new DateTime(2018, 4, 21, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            SellsCount = 93
-                        },
-                        new
-                        {
-                            Id = new Guid("7a7a7c19-6d00-4584-8318-d7916bf65862"),
-                            ProductId = new Guid("ccb544e5-b96c-45ae-b891-f70e31c978b4"),
-                            SellDateTime = new DateTime(2022, 11, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            SellsCount = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("8d75d84f-503e-47df-a49e-d16cb86a583e"),
-                            ProductId = new Guid("9f9695ba-3cd9-4c88-9c94-00c8a98693c0"),
-                            SellDateTime = new DateTime(2002, 12, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            SellsCount = 77
-                        },
-                        new
-                        {
-                            Id = new Guid("803a2477-485a-4ad3-99dd-537229bbb578"),
-                            ProductId = new Guid("9f9695ba-3cd9-4c88-9c94-00c8a98693c0"),
-                            SellDateTime = new DateTime(2007, 4, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Id = new Guid("cf0b63da-6a34-4dff-9313-a841a9a659b4"),
+                            ProductId = new Guid("02f35729-4fe4-4a15-a40c-294be3c7462c"),
+                            SellDateTime = new DateTime(2014, 4, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SellsCount = 6
                         },
                         new
                         {
-                            Id = new Guid("5dbb2b57-150c-4ddf-b7a7-49b92f84e698"),
-                            ProductId = new Guid("9f9695ba-3cd9-4c88-9c94-00c8a98693c0"),
-                            SellDateTime = new DateTime(2011, 7, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            SellsCount = 22
+                            Id = new Guid("9e5c7f48-c2c9-4164-9662-1438ddb8da08"),
+                            ProductId = new Guid("83051721-c684-4d33-b27b-be88891d0305"),
+                            SellDateTime = new DateTime(2007, 10, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SellsCount = 81
                         },
                         new
                         {
-                            Id = new Guid("71ac6cd5-4588-4a4a-9da2-e9df71ebad17"),
-                            ProductId = new Guid("59f4b265-7847-4a0e-a241-a56b2d096507"),
-                            SellDateTime = new DateTime(2018, 8, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            SellsCount = 71
+                            Id = new Guid("fb3ada67-8914-4383-8013-88942a4c4da9"),
+                            ProductId = new Guid("6cccc01a-eb96-4465-a476-30f7276d6f7f"),
+                            SellDateTime = new DateTime(2009, 5, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SellsCount = 98
                         },
                         new
                         {
-                            Id = new Guid("c00342e2-b14c-431a-b052-eea73dbf56bc"),
-                            ProductId = new Guid("9f9695ba-3cd9-4c88-9c94-00c8a98693c0"),
-                            SellDateTime = new DateTime(2008, 10, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            SellsCount = 2
+                            Id = new Guid("d23fe653-0d99-4e8c-86ed-6ad346e84be5"),
+                            ProductId = new Guid("83051721-c684-4d33-b27b-be88891d0305"),
+                            SellDateTime = new DateTime(2021, 3, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SellsCount = 99
                         },
                         new
                         {
-                            Id = new Guid("897d38eb-98cf-4a96-9448-bfd0e1793d98"),
-                            ProductId = new Guid("fdf86d11-4349-4916-ae70-c893da24ec8a"),
-                            SellDateTime = new DateTime(2007, 1, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            SellsCount = 25
+                            Id = new Guid("e1ab754b-6cf3-47b4-9d01-8e2db3007dbd"),
+                            ProductId = new Guid("02f35729-4fe4-4a15-a40c-294be3c7462c"),
+                            SellDateTime = new DateTime(2004, 5, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SellsCount = 52
                         },
                         new
                         {
-                            Id = new Guid("d5894c4d-8599-40d3-bcb1-b9b1dfd52a36"),
-                            ProductId = new Guid("9a779d9c-2ba1-4c3a-99a2-a07a56bec562"),
-                            SellDateTime = new DateTime(2021, 5, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            SellsCount = 17
+                            Id = new Guid("309eb85e-dc03-4de7-ac03-2c4962299230"),
+                            ProductId = new Guid("6cccc01a-eb96-4465-a476-30f7276d6f7f"),
+                            SellDateTime = new DateTime(2012, 5, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SellsCount = 39
                         },
                         new
                         {
-                            Id = new Guid("f9cabe17-d305-47fa-a1db-09fb56eb4c92"),
-                            ProductId = new Guid("ccb544e5-b96c-45ae-b891-f70e31c978b4"),
-                            SellDateTime = new DateTime(2014, 9, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            SellsCount = 78
+                            Id = new Guid("53aa784e-2854-4dee-917d-8ca6692f100b"),
+                            ProductId = new Guid("02f35729-4fe4-4a15-a40c-294be3c7462c"),
+                            SellDateTime = new DateTime(2009, 3, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SellsCount = 35
+                        },
+                        new
+                        {
+                            Id = new Guid("6a037672-80f0-4869-b570-1895efafe628"),
+                            ProductId = new Guid("6cccc01a-eb96-4465-a476-30f7276d6f7f"),
+                            SellDateTime = new DateTime(2004, 6, 29, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SellsCount = 31
+                        },
+                        new
+                        {
+                            Id = new Guid("63255f21-b178-4ae4-bde7-33bca5bdd0e2"),
+                            ProductId = new Guid("310ac857-1365-4657-8b5e-cb2c620589dd"),
+                            SellDateTime = new DateTime(2013, 6, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SellsCount = 61
+                        },
+                        new
+                        {
+                            Id = new Guid("3c120025-62c5-492f-a2a9-8a24e3e96683"),
+                            ProductId = new Guid("310ac857-1365-4657-8b5e-cb2c620589dd"),
+                            SellDateTime = new DateTime(2016, 10, 6, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SellsCount = 63
+                        },
+                        new
+                        {
+                            Id = new Guid("035ac37e-861d-426f-9beb-931687c8363b"),
+                            ProductId = new Guid("e2a5a28e-1bce-4d56-990e-136163dcb6df"),
+                            SellDateTime = new DateTime(2008, 2, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SellsCount = 27
                         });
                 });
 
@@ -237,9 +237,9 @@ namespace WebAPI.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("b1489d39-9258-42ad-a772-e04d904ac88c"),
+                            Id = new Guid("7b1b1769-984a-4836-9ba7-668def165b97"),
                             Login = "admin@example.com",
-                            Password = "$2a$11$0LRl7J.9XF8Ss0Op5j2Ece7dOpNl.QsHw85GnuLuMWCqmjxdhHRIi"
+                            Password = "$2a$11$PbcI7pY0C9ukDXcTIgyDJupQ.xKI3Kt0/NpbWrK.vYyRiSrXjexb6"
                         });
                 });
 

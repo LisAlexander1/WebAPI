@@ -57,8 +57,9 @@ public class ProductController : Controller
         {
             return BadRequest();
         }
-        await ProductsRepository.Add(product);
-        return CreatedAtAction("Get", new { id = product.Id }, product);
+
+        var createdProduct = await ProductsRepository.Add(product);
+        return CreatedAtAction(nameof(Get), new { id = createdProduct.Id }, createdProduct);
     }
 
     [HttpPut]

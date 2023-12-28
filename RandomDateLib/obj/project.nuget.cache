@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "tta8BrgPIeCoEM3DYVQWMpPRtnydkDDMpeS/LGuNqZRfPMhvcoO1si6zr9Ix6qqnInEexBWMtrpl6ZTyiToGVQ==",
+  "dgSpecHash": "FMswDvCU2ErpoUsUIMGxMOUifeQF9sv4mUNSC5xqA4d0TfRCeZpketvogEuSmy4ypTt7NFS++nFsvHtXYCW5Pw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lis\\RiderProjects\\WebAPI\\RandomDateLib\\RandomDateLib.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\lis_a\\RiderProjects\\WebAPI\\RandomDateLib\\RandomDateLib.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lis_a\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\lis_a\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\lis_a\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512"
+  ],
   "logs": []
 }

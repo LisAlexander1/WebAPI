@@ -10,3 +10,15 @@ C:\Users\lis\RiderProjects\WebAPI\RandomDateLib\obj\Debug\net7.0\RandomDateLib.d
 C:\Users\lis\RiderProjects\WebAPI\RandomDateLib\obj\Debug\net7.0\refint\RandomDateLib.dll
 C:\Users\lis\RiderProjects\WebAPI\RandomDateLib\obj\Debug\net7.0\RandomDateLib.pdb
 C:\Users\lis\RiderProjects\WebAPI\RandomDateLib\obj\Debug\net7.0\ref\RandomDateLib.dll
+C:\Users\lis_a\RiderProjects\WebAPI\RandomDateLib\bin\Debug\net7.0\RandomDateLib.deps.json
+C:\Users\lis_a\RiderProjects\WebAPI\RandomDateLib\bin\Debug\net7.0\RandomDateLib.dll
+C:\Users\lis_a\RiderProjects\WebAPI\RandomDateLib\bin\Debug\net7.0\RandomDateLib.pdb
+C:\Users\lis_a\RiderProjects\WebAPI\RandomDateLib\obj\Debug\net7.0\RandomDateLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lis_a\RiderProjects\WebAPI\RandomDateLib\obj\Debug\net7.0\RandomDateLib.AssemblyInfoInputs.cache
+C:\Users\lis_a\RiderProjects\WebAPI\RandomDateLib\obj\Debug\net7.0\RandomDateLib.AssemblyInfo.cs
+C:\Users\lis_a\RiderProjects\WebAPI\RandomDateLib\obj\Debug\net7.0\RandomDateLib.csproj.CoreCompileInputs.cache
+C:\Users\lis_a\RiderProjects\WebAPI\RandomDateLib\obj\Debug\net7.0\RandomDateLib.dll
+C:\Users\lis_a\RiderProjects\WebAPI\RandomDateLib\obj\Debug\net7.0\refint\RandomDateLib.dll
+C:\Users\lis_a\RiderProjects\WebAPI\RandomDateLib\obj\Debug\net7.0\RandomDateLib.pdb
+C:\Users\lis_a\RiderProjects\WebAPI\RandomDateLib\obj\Debug\net7.0\ref\RandomDateLib.dll
+C:\Users\lis_a\RiderProjects\WebAPI\RandomDateLib\obj\Debug\net7.0\RandomDateLib.sourcelink.json

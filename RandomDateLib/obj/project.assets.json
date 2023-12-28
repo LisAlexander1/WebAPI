@@ -8,24 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\lis\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\lis_a\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lis\\RiderProjects\\WebAPI\\RandomDateLib\\RandomDateLib.csproj",
+      "projectUniqueName": "C:\\Users\\lis_a\\RiderProjects\\WebAPI\\RandomDateLib\\RandomDateLib.csproj",
       "projectName": "RandomDateLib",
-      "projectPath": "C:\\Users\\lis\\RiderProjects\\WebAPI\\RandomDateLib\\RandomDateLib.csproj",
-      "packagesPath": "C:\\Users\\lis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lis\\RiderProjects\\WebAPI\\RandomDateLib\\obj\\",
+      "projectPath": "C:\\Users\\lis_a\\RiderProjects\\WebAPI\\RandomDateLib\\RandomDateLib.csproj",
+      "packagesPath": "C:\\Users\\lis_a\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lis_a\\RiderProjects\\WebAPI\\RandomDateLib\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\lis\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\lis_a\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,12 +56,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

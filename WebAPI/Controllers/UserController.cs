@@ -8,7 +8,7 @@ using WebAPI.Repositories;
 namespace WebAPI.Controllers;
 
 [ApiController]
-[Route("users")]
+[Route("auth")]
 public class UserController : Controller
 {
     private UserRepository UserRepository { get; }
@@ -18,7 +18,7 @@ public class UserController : Controller
         UserRepository = userRepository;
     }
 
-    [HttpPost("auth")]
+    [HttpPost]
     public async Task<IActionResult> Auth([FromBody] User loginUser)
     {
         var user = await UserRepository.GetByLogin(loginUser.Login);
